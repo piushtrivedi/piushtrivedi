@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Form generator for "Add to Blogger" button by Making  Different</title>
+<style type="text/css">
+.input-text,.text-input, .select-box{
+	margin:0 2px;
+	padding:4px 6px;
+	border: 1px solid #F9780E;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: 1px 1px 1px #dfdfdf;
+	box-shadow: 1px 1px 1px #dfdfdf;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+
+.textarea-box, .textareaBox{
+	border:1px solid #F9780E;
+	padding:6px;
+	-webkit-resize: none;
+	-moz-resize: none;
+	resize: none;
+	-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: 1px 1px 1px #dfdfdf;
+	box-shadow: 1px 1px 1px #dfdfdf;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.textareaBox{
+	display:block;
+	width:90%;
+	padding:10px;
+	max-width:98%;
+	margin:20px auto;
+	max-height:600px;
+	min-height:300px;
+}
+body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;background-color:#ffffff;font-size:14px;}
+#outer-wrapper {font-family: Verdana, Arial;}
+#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #F9EAD4;
+border:2px solid #F9780E;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+}
+#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em 
+;padding: 3px 10px;background-color: #F9780E;font-size:16px;color:#000;border:1px solid #111;
+
+}
+</style>
+<script type="text/javascript">
+ 
+var replaceText1 = "infoaddress";
+var replaceText2 = "logoaddress";
+var replaceText3 = "widgetcontentvalue";
+var replaceText4 = "titlevalue";
+var widara = document.getElementsByTagName("textarea")[0];
+function makingdifferentinfourl(){
+ 
+var mdinfo_url = document.getElementById('mdinfo_url').value;
+var widget_api=document.getElementById('widget_api');
+widget_api.value = widget_api.value.replace(replaceText1,mdinfo_url);
+}
+ 
+function makingdifferenttitle(){
+ 
+var mdwidget_title = document.getElementById('mdwidgettitle').value;
+var widget_api=document.getElementById('widget_api');
+widget_api.value = widget_api.value.replace(replaceText4,mdwidget_title);
+}
+ 
+function makingdifferentlogourl(){
+var mdlogo_url = document.getElementById('mdlogo_url').value;
+var widget_api=document.getElementById('widget_api');
+widget_api.value = widget_api.value.replace(replaceText2,mdlogo_url);
+}
+ 
+ 
+function convert(){
+ var ele1 = document.getElementById("widget_content");
+ var replaced;
+ replaced = ele1.value;
+ replaced = replaced.replace(/</ig, "&lt;");
+ replaced = replaced.replace(/>/ig, "&gt;");
+ replaced = replaced.replace(/"/ig, "&quot;");
+ replaced = replaced.replace(/&#177;/ig, "&plusmn;");
+ replaced = replaced.replace(/&#169;/ig, "&copy;");
+ replaced = replaced.replace(/&#174;/ig, "&reg;");
+ replaced = replaced.replace(/howdy/ig, "ya'll");
+ ele1.value = replaced;
+var widgetvalue = ele1.value;
+var widget_api=document.getElementById('widget_api');
+widget_api.value = widget_api.value.replace(replaceText3,widgetvalue);
+}
+function SelectAll(id)
+{
+    document.getElementById(id).focus();
+    document.getElementById(id).select();
+}
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<h2>Form generator for "Add to Blogger" button by Making 
+Different</h2>
+<fieldset>
+<table width="100%">
+<tr>
+<td width='40%'><label for='yourname'> Enter Widget Title </label></td>
+
+<td width='60%'><input class="text-input" id="mdwidgettitle" onchange="makingdifferenttitle()" onclick="this.value=''"  size='30' value="Your Title" /></td>
+</tr>
+<tr>
+<td width='40%'><label for='burl'> Blog Url / Profile URL </label></td>
+<td width='60%'><input class="text-input" id="mdinfo_url" onchange="makingdifferentinfourl()" onclick="this.value=''" size='60'  value="Your infourl" /></td>
+</tr>
+<tr>
+<td width='40%'><label for='imgurl'> Enter Your Logo URL </label></td>
+<td width='60%'><input class="text-input" id="mdlogo_url" onchange="makingdifferentlogourl()" onclick="this.value=''" size='60'  value="your logo_url" /></td>
+</tr>
+<tr>
+<td width='40%'><label for='bio'> Paste the widget content value(html/javascript) </label></td>
+
+<td width='60%'><textarea class="textarea-box" id="widget_content" onchange="convert()" cols='46' rows='6' ></textarea></td>
+</tr>
+<tr></tr>
+</table>
+</fieldset>
+<br>
+<center><input style='font-size:16px;width:220px;line-height:25px;font-weight:bold;' value="Generate" onclick="javascript:Generate();" 
+type="button"></center>
+<br>
+<br>
+<textarea class="textarea-box" id="widget_api" readonly="" onfocus="this.select()" onmouseover="this.focus()" 
+onclick="this.focus();this.select()" style= background:#ffffff;width:100%;height:200px;'>
+&lt;form action="http://www.blogger.com/add-widget" method="POST"&gt;&lt;input type="hidden" 
+name="widget.title" value="titlevalue"/&gt;&lt;input name="widget.content" type="hidden" 
+value="widgetcontentvalue" /&gt;&lt;input name="widget.template" type="hidden" 
+value="&amp;lt;data:content/&amp;gt;" /&gt;&lt;input type="hidden" name="infoUrl" 
+value="infoaddress"/&gt;&lt;input type="hidden" name="logoUrl" value="logoaddress"/&gt;&lt;input 
+alt="Add to Blogger" src="http://www.blogger.com/img/add/add2blogger_lg.gif" type="image" 
+/&gt;&lt;/form&gt;</textarea></form>
+<br><br>
+<center><small> Copyright &copy; 2012 All Rights Reserved by Making Different @ <a href='http://www.gj37765.blogspot.com/'>Making Different</a></small></center>
+
+</div>
+</body>
+</html>
