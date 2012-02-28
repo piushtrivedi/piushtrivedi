@@ -1,0 +1,23 @@
+<html>
+<head>
+ <script>
+ var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+  if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+  function mischandler(){
+   return false;
+ }
+  function mousehandler(e){
+ 	var myevent = (isNS) ? e : event;
+ 	var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+ }
+ document.oncontextmenu = mischandler;
+ document.onmousedown = mousehandler;
+ document.onmouseup = mousehandler;
+  </script>
+</head>
+<body>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://hindi4tech.blogspot.com/" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://piushtrivedi.googlecode.com/svn/trunk/html/h4tdemo/hindi4tech-iframe-toolbar.jpg" /></a></div>
+</body>
+</html>
