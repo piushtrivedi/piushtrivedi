@@ -1,0 +1,219 @@
+<html>
+
+<head>
+
+<title>Blogger Page Navigation Widget Generator By Aptech India</title>
+
+ <style type="text/css">
+            body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;color: #888;font-family: 'Philosopher', arial, serif;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease;
+}
+#outer-wrapper {font-family: Verdana, Arial;}
+#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #ffffff;
+background: none repeat scroll 0 0 #FAFAFA;
+	border: 1px solid #DEDEDE;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;
+	-moz-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;
+	box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;
+	padding: 15px;}
+			#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;color: #888;font-family: 'Philosopher', arial, serif;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease;background: none repeat scroll 0 0 #FAFAFA;border-left: 1px solid #DEDEDE;-webkit-border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;border-radius: 4px 4px 4px 4px;-webkit-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;-moz-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;padding: 0px;
+}
+            fieldset{-moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px;border:1px solid #AAA;}
+            fieldset legend{font-size:15px;font-weight:bold; padding:2px 10px;border:1px solid #AAA;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;}
+        </style>
+
+<script language="javascript">
+
+    function hindi4techGeneratecode() {
+
+
+
+        var h4tpostsperpage = document.getElementsByName("h4t_postsperpage")[0].value;
+
+        var h4tshownumbers = document.getElementsByName("h4t_showumbers")[0].value;
+
+        var h4tprev = document.getElementsByName("h4t_prev")[0].value;
+
+        var h4tnext = document.getElementsByName("h4t_next")[0].value;
+
+        var h4twidgetdata = document.getElementsByTagName("textarea")[0];
+
+
+
+         var h4tss=""
+
+         for (i=0; i<document.form.h4tselectstyle.length; i++)
+
+         {
+
+            if (document.form.h4tselectstyle[i].checked==true)
+
+            {
+
+               h4tss = document.form.h4tselectstyle[i].value
+
+            }
+
+         }
+
+h4twidgetdata.value = "\<style type=\"text/css\"\>" ;
+
+        h4twidgetdata.value = h4twidgetdata.value +  h4tss  ;
+
+h4twidgetdata.value = h4twidgetdata.value + " \</style\> " ;
+
+
+
+    h4twidgetdata.value = h4twidgetdata.value + "\n\<script style='text/javascript'\>";
+
+    h4twidgetdata.value = h4twidgetdata.value + "\nvar postperpage=" + h4tpostsperpage + ";";
+
+    h4twidgetdata.value = h4twidgetdata.value + "\nvar numshowpage=" + h4tshownumbers + ";";
+
+    h4twidgetdata.value = h4twidgetdata.value + "\nvar upPageWord=\"" + h4tprev + "\";";
+
+    h4twidgetdata.value = h4twidgetdata.value + "\nvar downPageWord=\"" + h4tnext + "\";";
+
+    h4twidgetdata.value = h4twidgetdata.value + "\nvar home_page=\"/\";\nvar urlactivepage=location.href;";
+
+    h4twidgetdata.value = h4twidgetdata.value + "\n\</script\>";
+
+    h4twidgetdata.value = h4twidgetdata.value + "\n\<script style='text/javascript' src='http://safir85.ucoz.com/24work-blogspot/page-navigation/0-test-p-n-01_00.js'\>\</script\>";
+
+    var pagenav = document.getElementsByName("go")[0];
+
+    pagenav.disabled = false;
+
+    pagenav.style.visibility="visible";
+
+    
+
+
+
+    }
+
+    function hindi4techdef() {
+
+        document.getElementsByName("go")[0].disabled = true;
+
+          document.getElementsByName("go")[0].style.visibility="hidden";
+
+        document.getElementsByName("h4t_showumbers")[0].value = "3";
+
+        document.getElementsByName("h4t_postsperpage")[0].value = "5";
+
+        document.getElementsByName("h4t_prev")[0].value = "Prev";
+
+        document.getElementsByName("h4t_next")[0].value = "Next";
+
+          document.getElementsByTagName("textarea")[0].value="";
+
+    }
+
+</script>
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+      <div id="content-wrapper">
+
+       <h2>Blogger Page Navigation Widget Generator With Styles</h2>
+
+
+
+<form name="form" method="post" action="http://www.blogger.com/add-widget" target="_blank">
+
+<input name="infoUrl" value="http://www.aptechindia.blogspot.com" type="hidden">
+
+<input name="logoUrl" value="http://dl.dropbox.com/u/14422613/Aptech_india/Aptech_logo.png" type="hidden">
+
+<fieldset>
+
+<table width="100%">
+
+<tr><td width="25%">Select Style </td><td width="75%">
+
+<div class="tb">
+
+<table>
+
+
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#000;text-shadow:0 1px 2px #fff;font-weight:bold}.showpageNum a{color:#000;padding:3px 8px;margin:0 4px;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px;background:#f8b5a4 url(http://dl.dropbox.com/u/14422613/hindi4tech/h4t_pagenav1.png) 0 -60px repeat-x}.showpageNum a:hover{border:1px solid #888;background:#f7cac9 url(http://dl.dropbox.com/u/14422613/hindi4tech/h4t_pagenav1.png) 0 -30px repeat-x}.showpageOf{margin:0 4px 0 0}.showpagePoint{color:#666;padding:3px 8px;margin:2px;font-weight:bold;-webkit-border-radius:3px;-moz-border-radius:3px;border:1px solid #999;background:#f2f0f0 url(http://dl.dropbox.com/u/14422613/hindi4tech/h4t_pagenav1.png) 0 -5px repeat-x;text-decoration:none}" checked="checked" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview.gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#000;text-shadow:0 1px 2px #fff;font-weight:normal}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px;background:#b1a7c3 url(http://dl.dropbox.com/u/14422613/hindi4tech/h4t_pagenav2.png) 0 -60px repeat-x}.showpageNum a:hover{border:1px solid #888;background:#f7b36a url(http://dl.dropbox.com/u/14422613/hindi4tech/h4t_pagenav2.png) 0 -30px repeat-x}.showpageOf{margin:0 4px 0 0}.showpagePoint{color:#444;text-shadow:0 1px 2px #333;padding:3px 8px;margin:2px;font-weight:700;-webkit-border-radius:3px;-moz-border-radius:3px;border:1px solid #999;background:#f7d5b0 url(http://dl.dropbox.com/u/14422613/hindi4tech/h4t_pagenav2.png) 0 0 repeat-x;text-decoration:none}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(1).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#000;text-shadow:0 1px 2px #fff;font-weight:normal}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;border-bottom:3px solid #fe9a2e;background:#f7f8e0}.showpageNum a:hover{border-bottom:3px solid #df01d7;background:#f6cee3}.showpageOf{margin:0 4px 0 0}.showpagePoint{color:#333;text-shadow:0 1px 2px #333;padding:3px 8px;margin:2px;font-weight:700;border-bottom:3px solid #fe9a2e;background:#f8e0f7;text-decoration:none}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(2).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#000;text-shadow:0 1px 2px #fff;font-weight:normal}.showpageNum a{padding:2px 8px;margin:0 4px;text-decoration:none;border-bottom:2px solid #5fb404;border-top:2px solid #5fb404;background:#effbf5}.showpageNum a:hover{border-bottom:2px solid #df01d7;background:#a9f5f2;border-top:2px solid #df01d7}.showpageOf{margin:0 4px 0 0}.showpagePoint{color:#fff;text-shadow:0 1px 2px #333;padding:2px 8px;margin:2px;font-weight:700;border-bottom:2px solid #5e610b;border-top:2px solid #5e610b;background:#5e610b;text-decoration:none}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(3).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#000;text-shadow:0 1px 2px #fff;font-weight:700}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px;background:#ddd url(http://4.bp.blogspot.com/_McxL-_3YYuM/TBG_a0U9fJI/AAAAAAAAAAU/qcqAF8aqWME/s1600/wp1.jpg) 0 -50px repeat-x}.showpageNum a:hover{border:1px solid #888;background:#ccc url(http://4.bp.blogspot.com/_McxL-_3YYuM/TBG_a0U9fJI/AAAAAAAAAAU/qcqAF8aqWME/s1600/wp1.jpg) 0 -25px repeat-x}.showpageOf{margin:0 4px 0 0}.showpagePoint{color:#fff;text-shadow:0 1px 2px #333;padding:3px 8px;margin:2px;font-weight:700;-webkit-border-radius:3px;-moz-border-radius:3px;border:1px solid #999;background:#666 url(http://4.bp.blogspot.com/_McxL-_3YYuM/TBG_a0U9fJI/AAAAAAAAAAU/qcqAF8aqWME/s1600/wp1.jpg) 0 0 repeat-x;text-decoration:none}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(4).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#000;text-shadow:0 1px 2px #fff;font-weight:700}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;border:1px solid #919106;-webkit-border-radius:3px;-moz-border-radius:3px;background:#ddd url(http://1.bp.blogspot.com/_McxL-_3YYuM/TBG_enC7gWI/AAAAAAAAAAc/HWqEJ9LyzPc/s1600/wp2.jpg) 0 -50px repeat-x}.showpageNum a:hover{border:1px solid #aeae0a;background:#ccc url(http://1.bp.blogspot.com/_McxL-_3YYuM/TBG_enC7gWI/AAAAAAAAAAc/HWqEJ9LyzPc/s1600/wp2.jpg) 0 -25px repeat-x}.showpageOf{margin:0 5px 0 0}.showpagePoint{color:#fff;text-shadow:0 1px 2px #333;padding:3px 8px;margin:2px;font-weight:bold;-webkit-border-radius:3px;-moz-border-radius:3px;border:1px solid #919106;background:#666 url(http://1.bp.blogspot.com/_McxL-_3YYuM/TBG_enC7gWI/AAAAAAAAAAc/HWqEJ9LyzPc/s1600/wp2.jpg) 0 0 repeat-x;text-decoration:none}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(5).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#fff}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;background:#363636 url(http://2.bp.blogspot.com/_McxL-_3YYuM/TBG_h_wTHCI/AAAAAAAAAAk/rFiXqN3fyes/s1600/wp3.jpg) 0 -25px repeat-x}.showpageNum a:hover{background:#044697 url(http://2.bp.blogspot.com/_McxL-_3YYuM/TBG_h_wTHCI/AAAAAAAAAAk/rFiXqN3fyes/s1600/wp3.jpg) 0 -50px repeat-x}.showpagePoint{color:#fff;padding:3px 8px;margin:2px;font-weight:700;background:#e30000 url(http://2.bp.blogspot.com/_McxL-_3YYuM/TBG_h_wTHCI/AAAAAAAAAAk/rFiXqN3fyes/s1600/wp3.jpg) 0 0 repeat-x;text-decoration:none}.showpageOf{margin:0 5px 0 0}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(6).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#fff}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;border-top:2px solid #000;border-left:1px solid #000;border-right:1px solid #000;border-bottom:1px solid #000;background:#666 url(http://4.bp.blogspot.com/_McxL-_3YYuM/TBG_pY-zi5I/AAAAAAAAAAs/NhvUZ3iOFe4/s1600/wp4.jpg) 0 -25px repeat-x}.showpageNum a:hover{border-top:1px solid #999;border-left:1px solid #999;border-right:1px solid #999;border-bottom:2px solid #999;background:#999 url(http://4.bp.blogspot.com/_McxL-_3YYuM/TBG_pY-zi5I/AAAAAAAAAAs/NhvUZ3iOFe4/s1600/wp4.jpg) 0 -50px repeat-x}.showpagePoint{color:#fff;padding:3px 8px;margin:2px;font-weight:700;border-top:2px solid #000;border-left:1px solid #000;border-right:1px solid #000;border-bottom:1px solid #000;background:#000 url(http://4.bp.blogspot.com/_McxL-_3YYuM/TBG_pY-zi5I/AAAAAAAAAAs/NhvUZ3iOFe4/s1600/wp4.jpg) 0 0 repeat-x;text-decoration:none}.showpageOf{margin:0 5px 0 0}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(7).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#000;font-size:11px;margin:10px}.showpageArea a{color:#fff}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;background:#333 url(http://3.bp.blogspot.com/_McxL-_3YYuM/TBG_wCOTrOI/AAAAAAAAAA0/MaANtQYQwgg/s1600/wp5.jpg) 0 -50px repeat-x}.showpageNum a:hover{background:#666 url(http://3.bp.blogspot.com/_McxL-_3YYuM/TBG_wCOTrOI/AAAAAAAAAA0/MaANtQYQwgg/s1600/wp5.jpg) 0 -25px repeat-x}.showpagePoint{color:#fff;padding:3px 8px;margin:2px;font-weight:700;background:#06a2b9 url(http://3.bp.blogspot.com/_McxL-_3YYuM/TBG_wCOTrOI/AAAAAAAAAA0/MaANtQYQwgg/s1600/wp5.jpg) 0 0 repeat-x;text-decoration:none}.showpageOf{margin:0 5px 0 0}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(8).gif"/></td></tr>
+
+<tr><td><input type="radio" value="#blog-pager{font-size:normal}.showpageArea{font-family:verdana,arial,helvetica;color:#fff;font-size:11px;margin:10px;padding:8px 20px;background:#333}.showpageArea a{color:#fff}.showpageNum a{padding:3px 8px;margin:0 4px;text-decoration:none;background:#666}.showpageNum a:hover{background:#aeb404}.showpagePoint{color:#fff;padding:3px 8px;margin:2px;font-weight:700;background:#da6100;text-decoration:none}.showpageOf{margin:0 5px 0 0}" name="h4tselectstyle"><img class="middle" src="http://dl.dropbox.com/u/14422613/hindi4tech/h4t_bloggerpagenavigation%20preview%20(9).gif"/></td></tr>
+
+
+</table>
+
+</div>
+
+</td></tr></table>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+
+<table width="100%">
+
+<tr><td width="50%">Previous Page Text:</td><td width="50%"><input size="8" name="h4t_prev" value="Prev" type="text"></td></tr> 
+
+<tr><td>Next Page Text:</td><td><input size="8" name="h4t_next" value="Next" type="text"></td></tr>
+
+<tr><td>Number of Posts Per Page:</td><td><input size="3" name="h4t_postsperpage" value="5" type="text"></td></tr>
+
+<tr><td>Page Num Count before and after current page:</td><td><input size="3" name="h4t_showumbers" value="3" type="text"></td></tr></table> 
+
+</fieldset>
+
+ <br> 
+
+
+<table align="center">
+
+<tr><td>
+
+<input style="width:150px; font-weight:bold;" value="Generate" onclick="javascript:hindi4techGeneratecode();" type="button"><br>
+
+<input style="width:150px;" value="Default" onclick="javascript:hindi4techdef();" type="button"></td><td>
+
+<input style="width:150px;visibility:hidden;" disabled="disabled" name="go" value="Add to Blogger" type="image" src="http://dl.dropbox.com/u/14422613/hindi4tech/addtobloggerbutton_h4t.png"></td></tr></table>
+
+<textarea name="widget.content" style="display:none ;"></textarea>
+
+</form><br>
+
+<span style="text-align:center;"><b>Copyright &#169;2012 By Aptech India @ <a href="http://aptechindia.blogspot.com">Aptech India</a></b></span>
+
+  </div>
+
+
+
+</body></html>
