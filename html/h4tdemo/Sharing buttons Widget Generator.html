@@ -1,0 +1,222 @@
+<html>
+<head>
+<title> Sharing buttons Widget Generator by Hindi4tech</title>
+<style type="text/css">
+.text-input, .select-box{
+	margin:0 2px;
+	padding:4px 6px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #666;
+	-moz-box-shadow: 1px 1px 1px #666;
+	box-shadow: 1px 1px 1px #666;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+			body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;color: #888;font-family: 'Philosopher', arial, serif;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease;
+}
+
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+			#outer-wrapper {font-family: Verdana, Arial;}
+			#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #ffffff;
+background: none repeat scroll 0 0 #FAFAFA;
+	border: 1px solid #DEDEDE;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;
+	-moz-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;
+	box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;
+	padding: 15px;}
+			#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;color: #888;font-family: 'Philosopher', arial, serif;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;-ms-transition: all 0.3s ease;transition: all 0.3s ease;background: none repeat scroll 0 0 #FAFAFA;border-left: 1px solid #DEDEDE;-webkit-border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;border-radius: 4px 4px 4px 4px;-webkit-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;-moz-box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;box-shadow: 1px 1px 4px #CCCCCC, 0 1px 0 #FFFFFF;padding: 0px;
+}
+.redi{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+
+.h4th2{background:#F9EAD4;font-size:14px;color:#333;text-shadow:1px 1px 1px #AAA;border-bottom:4px solid #F9780E;-moz-border-radius:0 0 6px 6px;-webkit-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;-moz-box-shadow:1px 1px 2px #AAA;-webkit-box-shadow:1px 1px 2px #AAA;box-shadow:1px 1px 2px #AAA;text-transform:capitalize;display:block;width:96%;line-height:1;margin:6px 3px;padding:4px 10px}
+a { outline:none; }
+
+.tip{background:#FFFFCC url(http://1.bp.blogspot.com/-WPyxXFlwJbI/T7DdaM0FjtI/AAAAAAAADMI/u_nHBc-Q1rI/s1600/Bulb_flashes_4.gif) center no-repeat; margin:0 auto; width:90%; display:block; border:1px solid #D5B900; background-position:7px 50%; padding:10px 10px 10px 45px; vertical-align:text-top !important; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+</style>
+<script type='text/javascript'>
+function hindi4techcodegen(){
+var fburl = document.getElementsByName("h4tfburl")[0].value;
+var gpluse = document.getElementsByName("h4tgp")[0].value;
+var twitterun = document.getElementsByName("h4tt")[0].value;
+var feed = document.getElementsByName("h4tfeed")[0].value;
+var mail = document.getElementsByName("h4tmail")[0].value;
+var h4tdelaytime = document.getElementsByName("h4tdt")[0].value;
+var basecolor = document.getElementsByName("h4tbasecolor")[0].value;
+var widget = document.getElementsByName("widget.content")[0];
+widget.value = "<script src='http:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.1\/jquery.min.js' type='text\/javascript'><\/script>";
+widget.value += "<style type=\"text\/css\">";
+widget.value += "#h4t-circle-mod{bottom: 0 !important;left: 5px;position: fixed;}";
+widget.value += "#h4t-container-circle{position:relative;height:100px;width:100px}";
+widget.value += "#h4t-base-button{";
+if(basecolor==0){
+widget.value += "background:-moz-linear-gradient(center top,#A90329 0,#8F0222 44%,#6D0019 100%) repeat scroll 0 0 #6D0019;";
+widget.value += "background:-webkit-linear-gradient(top,#a90329 0,#8f0222 44%,#6d0019 100%);";
+widget.value += "background:-o-linear-gradient(top,#a90329 0,#8f0222 44%,#6d0019 100%);";
+widget.value += "background:-ms-linear-gradient(top,#a90329 0,#8f0222 44%,#6d0019 100%);";
+widget.value += "background:linear-gradient(top,#a90329 0,#8f0222 44%,#6d0019 100%);";
+}else
+if(basecolor==1){widget.value+="background:-moz-linear-gradient(top,#008400 0,#00470a 100%) repeat #00470a;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#008400),color-stop(100%,#00470a));background:-webkit-linear-gradient(top,#008400 0,#00470a 100%);background:-o-linear-gradient(top,#008400 0,#00470a 100%);background:-ms-linear-gradient(top,#008400 0,#00470a 100%);background:linear-gradient(top,#008400 0,#00470a 100%);"
+}else
+if(basecolor==2){widget.value+="background:-moz-linear-gradient(top,#2a83cc 0,#155596 100%) #155596;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#2a83cc),color-stop(100%,#155596));background:-webkit-linear-gradient(top,#2a83cc 0,#155596 100%);background:-o-linear-gradient(top,#2a83cc 0,#155596 100%);background:-ms-linear-gradient(top,#2a83cc 0,#155596 100%);background:linear-gradient(top,#2a83cc 0,#155596 100%);"
+}else
+if(basecolor==3){widget.value+="background:-moz-linear-gradient(top,#666666 0,#131313 100%) #666666;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#666666),color-stop(100%,#131313));background:-webkit-linear-gradient(top,#666666 0,#131313 100%);background:-o-linear-gradient(top,#666666 0,#131313 100%);background:-ms-linear-gradient(top,#666666 0,#131313 100%);background:linear-gradient(top,#666666 0,#131313 100%);"
+}else
+if(basecolor==4){widget.value+="background:-moz-linear-gradient(top,#b8e1fc 0,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#b8e1fc),color-stop(10%,#a9d2f3),color-stop(25%,#90bae4),color-stop(37%,#90bcea),color-stop(50%,#90bff0),color-stop(51%,#6ba8e5),color-stop(83%,#a2daf5),color-stop(100%,#bdf3fd));background:-webkit-linear-gradient(top,#b8e1fc 0,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);background:-o-linear-gradient(top,#b8e1fc 0,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);background:-ms-linear-gradient(top,#b8e1fc 0,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);background:linear-gradient(top,#b8e1fc 0,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);"
+}else
+if(basecolor==5){widget.value+="background:-moz-linear-gradient(top,#f3c5bd 0,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#f3c5bd),color-stop(50%,#e86c57),color-stop(51%,#ea2803),color-stop(75%,#ff6600),color-stop(100%,#c72200));background:-webkit-linear-gradient(top,#f3c5bd 0,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);background:-o-linear-gradient(top,#f3c5bd 0,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);background:-ms-linear-gradient(top,#f3c5bd 0,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);background:linear-gradient(top,#f3c5bd 0,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);"
+}else
+if(basecolor==6){widget.value+="background:-moz-linear-gradient(top,#fceabb 0,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fceabb),color-stop(50%,#fccd4d),color-stop(51%,#f8b500),color-stop(100%,#fbdf93));background:-webkit-linear-gradient(top,#fceabb 0,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);background:-o-linear-gradient(top,#fceabb 0,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);background:-ms-linear-gradient(top,#fceabb 0,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);background:linear-gradient(top,#fceabb 0,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);"
+}else
+if(basecolor==7){widget.value+="background:-moz-linear-gradient(top,#e570e7 0,#c85ec7 47%,#a849a3 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#e570e7),color-stop(47%,#c85ec7),color-stop(100%,#a849a3));background:-webkit-linear-gradient(top,#e570e7 0,#c85ec7 47%,#a849a3 100%);background:-o-linear-gradient(top,#e570e7 0,#c85ec7 47%,#a849a3 100%);background:-ms-linear-gradient(top,#e570e7 0,#c85ec7 47%,#a849a3 100%);background:linear-gradient(top,#e570e7 0,#c85ec7 47%,#a849a3 100%);"
+}else
+if(basecolor==8){widget.value+="background:-moz-linear-gradient(top,#fcecfc 0,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fcecfc),color-stop(50%,#fba6e1),color-stop(51%,#fd89d7),color-stop(100%,#ff7cd8));background:-webkit-linear-gradient(top,#fcecfc 0,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%);background:-o-linear-gradient(top,#fcecfc 0,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%);background:-ms-linear-gradient(top,#fcecfc 0,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%);background:linear-gradient(top,#fcecfc 0,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%);"
+}else
+if(basecolor==9){widget.value+="background:-moz-linear-gradient(top,#efc5ca 0,#d24b5a 50%,#ba2737 51%,#f18e99 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#efc5ca),color-stop(50%,#d24b5a),color-stop(51%,#ba2737),color-stop(100%,#f18e99));background:-webkit-linear-gradient(top,#efc5ca 0,#d24b5a 50%,#ba2737 51%,#f18e99 100%);background:-o-linear-gradient(top,#efc5ca 0,#d24b5a 50%,#ba2737 51%,#f18e99 100%);background:-ms-linear-gradient(top,#efc5ca 0,#d24b5a 50%,#ba2737 51%,#f18e99 100%);background:linear-gradient(top,#efc5ca 0,#d24b5a 50%,#ba2737 51%,#f18e99 100%);"
+}else
+if(basecolor==10){widget.value+="background:-moz-linear-gradient(top,#aebcbf 0,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#aebcbf),color-stop(50%,#6e7774),color-stop(51%,#0a0e0a),color-stop(100%,#0a0809));background:-webkit-linear-gradient(top,#aebcbf 0,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);background:-o-linear-gradient(top,#aebcbf 0,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);background:-ms-linear-gradient(top,#aebcbf 0,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);background:linear-gradient(top,#aebcbf 0,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);"}
+widget.value += "border:4px solid #fff;text-decoration: none;z-index:9999;";
+widget.value += "cursor:pointer;border-radius:50px 50px 50px 50px;box-shadow:0 1px 3px rgba(0,0,0,0.5);";
+widget.value += "color:#fff;";
+widget.value += "font:68px Arial;";
+widget.value += "height:80px;";
+widget.value += "left:0;";
+widget.value += "padding:0;";
+widget.value += "position:absolute;";
+widget.value += "text-align:center;";
+widget.value += "top:0;width:80px";
+widget.value += "}";
+widget.value += ".h4t-btn{";
+widget.value += "position:absolute;";
+widget.value += "height:50px;";
+widget.value += "width:50px;";
+widget.value += "border-radius:25px;top:15px;left:15px;-webkit-transition:all 250ms;-moz-transition:all 250ms;-o-transition:all 250ms;-ms-transition:all 250ms;transition:all 250ms;box-shadow:0 1px 3px rgba(0,0,0,.5)";
+widget.value += "}";
+widget.value += "#h4t-fb.open{";
+widget.value += "top:-125px;left:25px";
+widget.value += "}";
+widget.value += "#h4t-fb.open.clicked{";
+widget.value += "top:-135px;left:15px";
+widget.value += "}";
+widget.value += "#h4t-tw.open{";
+widget.value += "top:-105px;left:80px";
+widget.value += "}";
+widget.value += "#h4t-gplus.open{";
+widget.value += "top:-75px;left:125px";
+widget.value += "}";
+widget.value += "#h4t-rss.open{";
+widget.value += "top:-30px;left:160px";
+widget.value += "}";
+widget.value += "#h4t-mail.open{";
+widget.value += "left:175px;top:25px";
+widget.value += "}";
+widget.value += ".plus{";
+widget.value += "-moz-user-select: none;-moz-transition:all 200ms ease-in 0s;-webkit-transition:all 200ms ease-in;-o-transition:all 200ms ease-in";
+widget.value += "}";
+widget.value += ".rot{";
+widget.value += "-moz-transform:rotate(137deg);-o-transform:rotate(137deg);-webkit-transform:rotate(137deg);transform:rotate(137deg)";
+widget.value += "}";
+widget.value += "<\/style>";
+widget.value += "<script type=\"text\/javascript\">";
+widget.value += "var delay="+ h4tdelaytime +",delayTime;$(function(){btns=$(\".h4t-btn\");";
+widget.value += "$(\"#h4t-base-button\").toggle(function(){$(\"span.plus\").addClass(\"rot\");btns.each(function(a){var b=$(this);delayTime=a*delay;window.setTimeout(function(){b.addClass(\"open\")},delayTime)})},function(){$(\"span.plus\").removeClass(\"rot\");$($(btns).get().reverse()).each(function(a){var b=$(this);delayTime=a*delay;window.setTimeout(function(){b.removeClass(\"open\")},delayTime)})})});";
+widget.value += "<\/script>";
+widget.value += "<a href=\"http:\/\/hindi4tech.blogspot.com\" style=\"position:absolute;z-index:-11\"><img src=\"http:\/\/1.bp.blogspot.com\/-RikrI-c_pyQ\/T2DTcP6aMvI\/AAAAAAAAAL0\/H6v7PVoHM_w\/s1600\/1x1juice.png\" \/><\/a>";
+widget.value += "<div id=\"h4t-circle-mod\">";
+widget.value += "<div id=\"h4t-container-circle\">";
+widget.value += "<a id=\"h4t-fb\" class=\"h4t-btn\" style=\"background:url(http:\/\/4.bp.blogspot.com\/-aiexTWd5pIA\/T8tT3C9m8wI\/AAAAAAAABpo\/Xg9vokC-y-A\/s1600\/%5Bwww.hindi4tech.blogspot.com_share+buttons2.png) repeat -1px 0\" href=\""+ fburl +"\" rel=\"nofollow\" target=\"_blank\"><\/a>";
+widget.value += "<a id=\"h4t-tw\" class=\"h4t-btn\" style=\"background:url(http:\/\/4.bp.blogspot.com\/-aiexTWd5pIA\/T8tT3C9m8wI\/AAAAAAAABpo\/Xg9vokC-y-A\/s1600\/%5Bwww.hindi4tech.blogspot.com_share+buttons2.png) repeat -52px 0\" href=\"http:\/\/twitter.com\/"+ twitterun +"\" rel=\"nofollow\" target=\"_blank\"><\/a>";
+widget.value += "<a id=\"h4t-gplus\" class=\"h4t-btn\" style=\"background:url(http:\/\/4.bp.blogspot.com\/-aiexTWd5pIA\/T8tT3C9m8wI\/AAAAAAAABpo\/Xg9vokC-y-A\/s1600\/%5Bwww.hindi4tech.blogspot.com_share+buttons2.png) repeat -157px 0\" href=\""+ gpluse +"\" rel=\"nofollow\" target=\"_blank\"><\/a>";
+widget.value += "<a id=\"h4t-rss\" class=\"h4t-btn\" style=\"background:url(http:\/\/4.bp.blogspot.com\/-aiexTWd5pIA\/T8tT3C9m8wI\/AAAAAAAABpo\/Xg9vokC-y-A\/s1600\/%5Bwww.hindi4tech.blogspot.com_share+buttons2.png) repeat -105px 0\" href=\""+ feed +"\" rel=\"nofollow\" target=\"_blank\"><\/a>";
+widget.value += "<a id=\"h4t-mail\" class=\"h4t-btn\" style=\"background:url(http:\/\/4.bp.blogspot.com\/-aiexTWd5pIA\/T8tT3C9m8wI\/AAAAAAAABpo\/Xg9vokC-y-A\/s1600\/%5Bwww.hindi4tech.blogspot.com_share+buttons2.png) repeat -210px 0\" href=\"http:\/\/feedburner.google.com\/fb\/a\/mailverify?uri="+ mail +"&loc=en_US\" rel=\"nofollow\" target=\"_blank\"><\/a>";
+widget.value += "<a id=\"h4t-base-button\"><span class=\"plus\">+<\/span><\/a><\/div><\/div><a href=\"http:\/\/hindi4tech.blogspot.com\" rel=\"dofollow\"><\/a>";
+document.getElementsByName("go")[0].disabled=false;
+document.getElementsByName("Preview")[0].disabled=false
+}
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<h2>Sharing buttons Widget Generator by Hindi4tech</h2>
+<fieldset class='redi' style='border:1px solid #7F9DB9;'><legend class='redi' align='left' style='border:1px solid #7F9DB9;padding:3px 10px;margin-left:20px;'>Settings</legend>
+<center><br>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+<table width="100%">
+<tr>
+<td width='60%'><label for='h4tfburl'>Facebook Fan Page URL:</label>:</td>
+<td width='40%'><input class='text-input' type='text' name='h4tfburl' value='https://www.facebook.com/hindi4tech' size='25'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='h4tgp'>Twitter Username:</label></td>
+<td width='40%'><input class='text-input' type='text' name='h4tgp' value='https://plus.google.com/102214245923918648841' size='25'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='h4tt'>Google plus URL:</label></td>
+<td width='40%'><input class='text-input' type='text' name='h4tt' value='Piush Trivedi' size='25'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='h4tfeed'>Feed URL:</label></td>
+<td width='40%'><input class='text-input' type='text' name='h4tfeed' value='http://feeds.feedburner.com/hindi4tech' size='25'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='h4tmail'>Feedburner ID:</label></td>
+<td width='40%'><input class='text-input' type='text' name='h4tmail' value='hindi4tech' size='25'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='h4tbasecolor'>Base Circle Color:</label></td>
+<td width='40%'>
+<select class='select-box' id='h4tbasecolor'  name='h4tbasecolor'>
+<option value='0'>Default (Red)</option>
+<option value='1'>Green</option> 
+<option value='2'>Blue</option>
+<option value='3'>Stylish Black</option>
+<option value='4'>Water Blue</option>
+<option value='5'>Glowing Orange</option>
+<option value='6'>3D Orange</option>
+<option value='7'>Purple 3D</option>
+<option value='8'>Rose Pink</option>
+<option value='9'>3D Glow Red</option>
+<option value='10'>Black 3D</option>
+</select>
+</td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='h4tdt'>Animation Delay Time:</label></td>
+<td width='40%'><input class='text-input' type='text' name='h4tdt' value='40' size='6'><b>* Range: 10 - 100 </b></td>
+</tr>
+</table>
+<table>
+<tr>
+<td width='100%'><br>
+<div style="text-align: center;">
+<u><span style="font-size: large;"><div class="h4th2"><b>Preview</b></div></span></u></div>
+<div class="tip" style="text-align: center;">
+<b>Click On "Preview"&nbsp; Button Below</b></div>
+<iframe allowtransparency="true" frameborder="0"  scrolling="no" src="about:blank" name="preview" style="
+ height:250px;width:500px;border:solid 1px #fff;padding:5px; background:#FFFFFF" frameborder="0"></td></tr>
+</iframe>
+</fieldset>
+<br><br>
+<center><input style="width:180px; font-weight:bold;font-size:20px; " value="Generate" onclick="javascript:hindi4techcodegen();" type="button"><input disabled="disabled" name="Preview" value=" Preview"style="font-size: 22px; width: 175px;" type="button"  onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus();"/>
+<input style="width:180px; font-weight:bold;font-size:20px; " disabled="disabled" name="go" value="Add to Blogger" type="submit"><br><textarea name="widget.content" style="display:none;"></textarea><input name="infoUrl" value="http://hindi4tech.blogspot.com" type="hidden"><input name="logoUrl" value="" type="hidden"></form></center>
+<br>
+<center><small> Copyright &copy; 2012 All Rights Reserved by Piush Trivedi @ <a href='http://www.hindi4tech.blogspot.com/'>Hindi4Tech</a></small></center>
+</div>
+</body>
+</html>
