@@ -1,0 +1,14 @@
+
+/* script created by aditya yadav only shraring purpose*/
+
+
+if ((window.location.href.toString().indexOf('.com/'))=='-1') 
+
+
+
+{  window.location.href =window.location.href.toString().replace('.blogspot.in/','.blogspot.com/ncr/').replace('.blogspot.com.au/','.blogspot.com/ncr/');}
+
+
+
+
+/*raredreams@live.com*/
